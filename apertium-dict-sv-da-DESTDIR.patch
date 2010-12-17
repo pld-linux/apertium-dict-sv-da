@@ -1,0 +1,17 @@
+--- apertium-sv-da-0.5.0/Makefile.am.orig	2009-09-22 14:53:23.000000000 +0200
++++ apertium-sv-da-0.5.0/Makefile.am	2010-12-17 20:16:55.178115231 +0100
+@@ -82,10 +82,10 @@
+ 
+ install-data-local:
+ 	apertium-gen-modes modes.xml apertium-$(PREFIX1)
+-	$(INSTALL_DATA) $(PREFIX1).mode $(apertium_sv_modesdir)
+-	$(INSTALL_DATA) $(PREFIX2).mode $(apertium_sv_modesdir)
+-	$(INSTALL_DATA) $(BASENAME).$(PREFIX1).t1x $(apertium_sv_dadir)
+-	$(INSTALL_DATA) $(BASENAME).$(PREFIX2).t1x $(apertium_sv_dadir)
++	$(INSTALL_DATA) $(PREFIX1).mode $(DESTDIR)$(apertium_sv_modesdir)
++	$(INSTALL_DATA) $(PREFIX2).mode $(DESTDIR)$(apertium_sv_modesdir)
++	$(INSTALL_DATA) $(BASENAME).$(PREFIX1).t1x $(DESTDIR)$(apertium_sv_dadir)
++	$(INSTALL_DATA) $(BASENAME).$(PREFIX2).t1x $(DESTDIR)$(apertium_sv_dadir)
+ 	cp *.mode modes/
+ 
+ 
