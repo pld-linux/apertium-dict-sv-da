@@ -2,12 +2,12 @@ Summary:	Swedish-Danish language pair for Apertium
 Summary(pl.UTF-8):	Para języków szwedzki-duński dla Apertium
 %define	lpair	sv-da
 Name:		apertium-dict-%{lpair}
-Version:	0.5.0
+Version:	0.5.1
 Release:	1
 License:	GPL v2+
 Group:		Applications/Text
 Source0:	http://downloads.sourceforge.net/apertium/apertium-%{lpair}-%{version}.tar.gz
-# Source0-md5:	23d4247a7eb4835a096737a20251bc78
+# Source0-md5:	73a3dd73eafb38d72310a3f12a415e1c
 Patch0:		%{name}-DESTDIR.patch
 Patch1:		%{name}-apertium32.patch
 URL:		http://www.apertium.org/
